@@ -42,11 +42,14 @@ tip. Like this:
 
     //configuration options
     $("a.tip").tipIt({
-        "container": "#tmpl-ToolTip", //the id of the container element
-        "content": ".tipContent", //the class name assinged to the content element
-        "rightStyle": "tipR", //css class assigned when standard tip is applied
-        "leftStyle": "tipL", //css class assigned when flipped tip is assigned
-        "delay": 200 //ms delay before tip is shown
+        id : "tmpl-ToolTip", //the id to assign to tipIt's container element
+        container : "tipContainer", //css class to assign to container
+        content : "tipContent", //css class to assign to content element
+        right : "tipR", //css class assigned when standard tip is shown
+        left : "tipL", //css class assigned when flipped tip is shown
+        arrowR: "arrowR", //css class to assign to right-pointing arrow
+        arrowL: "arrowL", //css class to assign to left-pointing arrow
+        delay : 200 //delay in ms before tip is shown
     });
 
 - - -
