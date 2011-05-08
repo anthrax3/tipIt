@@ -12,8 +12,6 @@
   //main plugin logic
   $.fn.tip = function (cfg) {
     //default settings
-    //TODO: whatup w/ id & class indicators (e.g. "#" & ".")?
-    //should they be added by the script or passed in?
     var settings = {
         id : "tmpl-ToolTip",
         container : "tipContainer",
@@ -35,12 +33,12 @@
 
     //insert container template if needed
     if (!hasContainer) {
-      tmpl = '<div id="' + settings.id + '" ';
-      tmpl += 'class="' + settings.container + '">';
-      tmpl += '<span class="' + settings.arrowR + '"></span>';
-      tmpl += '<span class="' + settings.content + '">I am a tooltip!</span>';
-      tmpl += '<span class="' + settings.arrowL + '"></span>';
-      tmpl += '</div>';
+      tmpl = '<div id="' + settings.id + '" '
+           + 'class="' + settings.container + '">'
+           + '<span class="' + settings.arrowR + '"></span>'
+           + '<span class="' + settings.content + '">I am a tooltip!</span>'
+           + '<span class="' + settings.arrowL + '"></span>'
+           + '</div>';
 
       $("body").append(tmpl);
 
