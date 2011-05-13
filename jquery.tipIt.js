@@ -10,7 +10,7 @@
   var hasContainer = false;
 
   //main plugin logic
-  $.fn.tip = function (cfg) {
+  $.fn.tipIt = function (cfg) {
     //default settings
     var settings = {
         id : "tmpl-ToolTip",
