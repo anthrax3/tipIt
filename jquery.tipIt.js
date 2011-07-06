@@ -1,4 +1,4 @@
-﻿/*
+/*
 * jQuery tipIt Plugin v0.1.0
 * Copyright 2011, Matthew Mirande
 * Dual licensed under the MIT or GPL Version 2 licenses.
