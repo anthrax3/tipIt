@@ -105,14 +105,14 @@
             .find("." + settings.content)
             .text(tipCopy);
         }, settings.delay);
-      };
+      }
 
       function hideTip() {
         clearTimeout(timeoutID);
         $target
           .css({"right":"","left":""})
           .removeClass(cssClass);
-      };
+      }
     });
   };
 })(jQuery);
